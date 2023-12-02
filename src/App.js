@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+// import { JBModal } from 'jb-modal-react'
+import Intro from './All/intro/Intro';
+import Header from './All/header/Header';
+import LH from './All/lower-header/LH';
+import Link from './All/f-linkb/Link';
+import Footer from './All/footer/Footer';
+import Director from './All/director/Director';
+import Actors from './All/actors/Actors';
+import Vip from './All/vip-m/Vip';
+import Ekhtsasi from './All/ekhts/Vip';
+import Free from './All/free/Vip';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Intro></Intro>
+      <Header></Header>
+      <LH></LH>
+      <Vip></Vip>
+      <Ekhtsasi></Ekhtsasi>
+      <Actors></Actors> 
+      <Free></Free>
+      <Director></Director>
+      <Link></Link>
+      <Footer></Footer>
     </div>
   );
 }
